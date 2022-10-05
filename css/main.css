@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -126,15 +127,41 @@ body {
   margin-bottom: 42px;
   font-size: 16px;
   line-height: 32px;
-  text-align: Left;
+  text-align: left;
   color: rgba(255, 255, 255, 0.64);
 }
-.contacts-title .boxText::before {
+
+.contacts-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  color: white;
+  gap: 16px;
+}
+.contacts-box p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.contacts-box__icon {
   content: "";
-  width: 30px;
-  height: 30px;
+  min-width: 48px;
+  height: 48px;
   border-radius: 50%;
-  color: #ef6d58;
+  background-color: orangered;
+  top: -6px;
+  left: 20px;
+}
+.contacts-box__icon .fa-phone {
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
 @media screen and (min-width: 800px) {
@@ -152,6 +179,6 @@ body {
   .contact .contactGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 130px;
   }
 }/*# sourceMappingURL=main.css.map */
