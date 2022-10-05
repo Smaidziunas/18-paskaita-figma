@@ -68,6 +68,48 @@ body {
   }
 }
 
+.contacts-title {
+  padding-top: 60px;
+
+  .preTitle{
+    text-transform: uppercase;
+    color:#ef6d58;
+    font-size: 16px;
+    font-style:normal;
+    line-height: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 17px;
+  }
+
+  .boxTitle{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+    color:#fff;
+    text-transform: capitalize;
+
+  }
+
+  .boxText {
+    margin-bottom: 42px;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: Left;
+    color: rgba(255, 255, 255, 0.64);
+  }
+  .boxText::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #ef6d58;
+  }
+}
+
+
+
+
+
 
 @media screen and (min-width: 800px) {
   .container {
